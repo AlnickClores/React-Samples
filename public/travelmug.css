@@ -1,0 +1,115 @@
+:root {
+  --orange: #ff8b00;
+  --white: #fbfbfb;
+  --white-bg: #f6f6f6;
+  --black: #010101;
+  --green: #03c04a;
+  --yellow: #ece75f;
+  --disabled-green: #03c04c86;
+  --disabled-yellow: #ece75f3d;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--orange);
+  padding: 20px 30px;
+}
+
+.navbar h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.searchbar-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.searchbar-container input {
+  padding: 3px 5px;
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.searchbar-container input:focus {
+  border-color: var(--black);
+}
+
+.searchbar-container {
+  background-color: var(--white);
+}
+
+.orders-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 10px;
+}
+
+.orders-card {
+  background-color: var(--white-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10%;
+  padding: 15px;
+  border: 1px solid var(--orange);
+}
+
+.order-id {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.orders-container {
+  margin: 30px 0;
+}
+
+.orders {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.order-note-container {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.order-note {
+  font-size: 16px;
+}
+
+.status {
+  font-size: 20px;
+  color: #21943afb;
+  font-weight: bold;
+}
+
+.orders-card-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.start-btn {
+  background-color: var(--green);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.finish-btn {
+  background-color: var(--yellow);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 9px;
+}
