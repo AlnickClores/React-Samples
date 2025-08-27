@@ -39,5 +39,3 @@ const sampleDb = [
     order_note: "Sample Order Note",
   },
 ];
-
-export default sampleDb;

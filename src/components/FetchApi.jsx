@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+import axios from "axios";
 
 const FetchApi = () => {
   const [datas, setData] = useState(null);
@@ -7,7 +8,7 @@ const FetchApi = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const res = await axios.get("https://jsonplaceholder.typicode.com/users");
       const jsondata = await res.json();
       console.log(jsondata);
       setData(jsondata);
@@ -18,7 +19,7 @@ const FetchApi = () => {
 
   const fetchWholeData = async () => {
     try {
-      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const res = await axios.get("https://jsonplaceholder.typicode.com/users");
       const jsondata = await res.json();
       const value = JSON.stringify(jsondata);
       setWholeData(value);
