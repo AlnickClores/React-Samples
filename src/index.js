@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Crudd from "./components/crudd";
 import SearchFilter from "./pages/SearchFilter";
 import UseContextSample from "./pages/ThemePage";
+import FormPage from "./pages/FormPage";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="crud" element={<Crudd />}></Route>
       <Route path="search" element={<SearchFilter />}></Route>
       <Route path="usecontext" element={<UseContextSample />}></Route>
+      <Route path="form" element={<FormPage />}></Route>
     </Routes>
   </BrowserRouter>
 );
